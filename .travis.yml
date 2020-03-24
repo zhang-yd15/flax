@@ -27,7 +27,12 @@ install:
   - conda install -c conda-forge pandoc
 script:
   # build the docs
-  - (cd docs && python format_howtos.py)
+  - cd docs
+  - python format_howtos.py
+  - ls
+  - ls _formattted_howtos
+  - cat _formattted_howtos/howto-distributed-training.dff.html
+  - cd ..
   - sphinx-build -M html docs docs/_build
   # run the main flax unit tests
   - pytest -n 1 tests -W ignore
