@@ -30,8 +30,8 @@ script:
   - cd docs
   - python format_howtos.py
   - ls
-  - ls _formattted_howtos
-  - cat _formattted_howtos/howto-distributed-training.dff.html
+  - ls _formatted_howtos
+  - cat _formatted_howtos/howto-distributed-training.dff.html
   - cd ..
   - sphinx-build -M html docs docs/_build
   # run the main flax unit tests
