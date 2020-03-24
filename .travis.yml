@@ -31,7 +31,7 @@ script:
   - python format_howtos.py
   - ls
   - ls _formatted_howtos
-  - cat _formatted_howtos/howto-distributed-training.dff.html
+  - cat _formatted_howtos/howto-distributed-training.diff.html
   - cd ..
   - sphinx-build -M html docs docs/_build
   # run the main flax unit tests
